@@ -1,0 +1,309 @@
+/* header */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* - Light mode - */
+
+  /* Text */
+  --text-light: #eee;
+  --text-light2: #ccc;
+  --text-dark: #020202;
+  --text-dark2: #303030;
+
+  /* Generic colors */
+  --white-e: #eee;
+  --white-f: #fff;
+  --black-05: #050505;
+  --main-purple: #4400e2cc;
+  --secondary-red: #f13f41;
+  --grey: #aaa;
+  --white-transparent: #ffffff50;
+
+  /* Introduction */ 
+  --main-purpleVariant: #4c00ff;
+
+  /* Form */
+  --form-inputColor: #6820c7;
+  --form-inputSelectedColor: rgb(10, 10, 10);
+  --form-selectText: #9ca3af;
+
+  /* Footer */
+  --icon: #40404060;
+  --icon-insta: #f271a2;
+  --shadow-insta: #e1306cbf;
+
+  --icon-twitter: #fff;
+  --shadow-twitter: #ffffffcc;
+
+  --icon-whatsapp: #25d366;
+  --shadow-whatsapp: #25d366;
+  
+
+  /* - Dark mode - */
+
+  /* Text */
+  --text-light: #eee;
+  --text-light2: #ccc;
+  --text-dark: #020202;
+  --text-dark2: #303030;
+
+  /* Generic colors */
+  --white-e: #eee;
+  --white-f: #fff;
+  --black-05: #050505;
+  --main-purple: #4400e2cc;
+  --secondary-red: #f13f41;
+  --grey: #aaa;
+  --white-transparent: #ffffff50;
+
+  /* Introduction */ 
+  --main-purpleVariant: #4c00ff;
+
+  /* Form */
+  --form-inputColor: #6820c7;
+  --form-inputSelectedColor: rgb(10, 10, 10);
+  --form-selectText: #9ca3af;
+
+  /* Footer */
+  --icon-insta: #f271a2;
+  --shadow-insta: #e1306cbf;
+
+  --icon-twitter: #fff;
+  --shadow-twitter: #ffffffcc;
+
+  --icon-whatsapp: #25d366;
+  --shadow-whatsapp: #25d366;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  margin: 0;
+}
+
+::-webkit-scrollbar-button {
+  width: 35px;
+  margin: 0;
+  height: 35px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--main-purple);
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--black-05);
+  border: 0px none var(--white-f);
+  border-radius: 53px;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(250, 250, 255);
+}
+
+.menu-item {
+  position: relative;
+  transition: .1s;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0 8px;
+  padding: 4px 12px;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+      180deg,
+      var(--main-purple),
+      var(--secondary-red)
+    );
+    transform: scaleX(0);
+    transform: translateY(1px);
+    transform-origin: center;
+  }
+
+  &:hover::after {
+    transform: scaleX(1.1);
+  }
+}
+
+.svg_logo {
+  fill: var(--white-f);
+}
+
+/* services */
+.gradiente {
+  background: linear-gradient(
+    135deg,
+    var(--main-purple) 30%,
+    var(--secondary-red)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.svg_logo {
+  stroke: var(--secondary-red);
+  transition: all ease-out 0.5;
+}
+
+.services_nav_button:hover .svg_logo {
+  stroke: var(--white-e);
+}
+
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+a:hover:nth-child(1) .social_logo,
+a:hover:nth-child(1) h5 {
+  fill: var(--icon-insta);
+  color: var(--icon-insta);
+  filter: drop-shadow(0 0 5px var(--shadow-insta));
+}
+
+a:hover:nth-child(2) .social_logo,
+a:hover:nth-child(2) h5 {
+  fill: var(--icon-twitter);
+  filter: drop-shadow(0 0 5px var(--shadow-twitter));
+}
+
+a:hover:nth-child(3) .social_logo,
+a:hover:nth-child(3) h5 {
+  fill: var(--icon-whatsapp);
+  color: var(--icon-whatsapp);
+  filter: drop-shadow(0 0 5px var(--shadow-whatsapp));
+}
+
+.activeButton {
+  padding: 1.5vh 2vw;
+  border-radius: 10px;
+  border: 1px solid var(--white-f);
+  display: inline-block;
+  color: var(--white-f);
+  font-size: 1rem;
+  transition: color 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.activeButton::before {
+  content: "";
+  background-color: var(--main-purpleVariant);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: width 0.5s;
+  z-index: -1;
+}
+
+.disabledButton {
+  padding: 1.5vh 2vw;
+  border-radius: 10px;
+  border: 1px solid var(--white-f);
+  display: inline-block;
+  color: var(--grey);
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.aboutButton {
+  position: relative;
+  display: inline-block;
+  background-color: var(--white-transparent);
+  border-radius: 10px;
+  color: var(--text-color);
+  padding: 1.5vh 2vw;
+  overflow: hidden;
+  transition: color 0.35s ease-out;
+}
+
+.aboutButton::after {
+  content: "";
+  position: absolute;
+  top: -25%;
+  left: 50%;
+  width: 0;
+  height: 150%;
+  background-color: var(--main-purple);
+  /* border-radius: 50%; */
+  transition: width 0.35s ease-out, left 0.35s ease-out;
+  transform-origin: center;
+  z-index: -1;
+}
+
+.aboutButton:hover::after {
+  width: 150%;
+  left: -25%;
+  position: absolute;
+}
+
+.aboutButton:hover {
+  color: var(--text-light);
+}
+
+.loading::before {
+  content: "";
+  display: block;
+  margin: auto;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--grey);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(60deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(300deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#loaded {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  display: none;
+  background-image: url("/fundo_linha.png");
+}
+
+#loaded span {
+  flex-wrap: nowrap;
+  margin: auto;
+  width: fit-content;
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2vw;
+  padding: 3vh 2vw;
+}
