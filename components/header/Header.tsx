@@ -81,11 +81,11 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
               alt="Logo"
               width={300}
               height={300}
-              className="w-[calc(12vw+20px)] cursor-pointer"
+              className="w-[calc(35vw+20px)] xl:w-[calc(12vw+20px)] cursor-pointer"
               onClick={scrollTop}
             />
             <nav className="w-full flex justify-end items-end text-center translate-y-1">
-              <ul className="text-[calc(.75vw+3px)] uppercase font-semibold text-[var(--text-dark)] flex gap-x-6">
+              <ul className="text-[calc(.75vw+3px)] uppercase font-semibold text-[var(--text-dark)] hidden xl:flex gap-x-6">
                 {menuItems.map((item, index) => (
                   <li
                     key={index}
