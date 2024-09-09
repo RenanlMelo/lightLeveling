@@ -21,7 +21,7 @@
   --grey: #aaa;
   --white-transparent: #ffffff50;
 
-  /* Introduction */ 
+  /* Introduction */
   --main-purpleVariant: #4c00ff;
 
   /* Form */
@@ -39,7 +39,6 @@
 
   --icon-whatsapp: #25d366;
   --shadow-whatsapp: #25d366;
-  
 
   /* - Dark mode - */
 
@@ -58,7 +57,7 @@
   --grey: #aaa;
   --white-transparent: #ffffff50;
 
-  /* Introduction */ 
+  /* Introduction */
   --main-purpleVariant: #4c00ff;
 
   /* Form */
@@ -107,7 +106,7 @@ body {
 
 .menu-item {
   position: relative;
-  transition: .1s;
+  transition: 0.1s;
   cursor: pointer;
   display: flex;
   justify-content: center;
@@ -146,8 +145,21 @@ body {
     var(--main-purple) 30%,
     var(--secondary-red)
   );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .gradiente {
+    background: linear-gradient(
+      135deg,
+      rgb(153, 153, 200) 30%,
+      var(--main-purple)
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 }
 
 .svg_logo {

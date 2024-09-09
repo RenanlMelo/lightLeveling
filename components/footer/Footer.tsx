@@ -22,7 +22,7 @@ export const Footer = () => {
           Nosso objetivo é oferecer uma experiência única e resultados que
           superam expectativas.
         </h3>
-        <div className="text-[#bbb] text-xl flex justify-center items-start flex-col gap-y-6 col-start-5">
+        <div className="text-[#bbb] text-xl flex justify-center items-start flex-col gap-y-6 xl:col-start-5">
           <a href="" className="flex justify-start items-center gap-x-[1vw]">
             {/* <h5 className="duration-300">Instagram</h5> */}
             <svg

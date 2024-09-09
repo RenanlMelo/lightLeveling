@@ -37,7 +37,7 @@ export const Introduction: React.FC<introductionProps> = ({ sectionSize }) => {
         id="inicio"
         className="h-[80vh] overflow-visible xl:h-auto w-[90vw] xl:w-full grid grid-cols-2 justify-center items-center relative mx-[5vw] xl:mx-0 px-0 xl:px-[10vw] py-[calc(10vh+20px)] bg-center bg-full bg-no-repeat"
       >
-        <div className="h-full flex justify-start xl:justify-center items-center md:items-start flex-col row-span-2 col-span-2 md:col-span-1 md:row-span-1">
+        <div className="h-full flex justify-center items-center md:items-start flex-col row-span-2 col-span-2 md:col-span-1 md:row-span-1">
           <h1 className="text-[calc(5vw+7px)] xl:text-[calc(1.75vw+15px)] leading-[1] text-[var(--text-dark)] font-bold tracking-wider w-full md:text-start flex flex-col">
             <strong className="font-bold text-[calc(7vw+10px)] xl:text-[calc(2.75vw+15px)] gradiente whitespace-nowrap">
               Eleve e impulsione <br />
