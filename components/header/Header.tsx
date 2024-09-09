@@ -72,7 +72,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
           <motion.header
             ref={headerRef}
             id="header"
-            className="fixed grid grid-cols-2 justify-center items-center max-w-[93vw-20px] px-[calc(3.5vw+10px)] w-full z-40 backdrop-blur-lg"
+            className="fixed grid grid-cols-2 justify-center items-center max-w-[93vw-20px] px-[2vw] xl:px-[calc(3.5vw+10px)] w-full z-40 backdrop-blur-lg"
             initial={{ backgroundColor: "transparent" }}
             animate={controls}
           >
@@ -81,7 +81,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
               alt="Logo"
               width={300}
               height={300}
-              className="w-[calc(35vw+20px)] xl:w-[calc(12vw+20px)] cursor-pointer"
+              className="w-[calc(40vw+20px)] xl:w-[calc(12vw+20px)] cursor-pointer"
               onClick={scrollTop}
             />
             <nav className="w-full flex justify-end items-end text-center translate-y-1">
