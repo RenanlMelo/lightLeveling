@@ -15,7 +15,7 @@ export const Footer = () => {
           superam expectativas.
         </h3>
         <div className="text-[#bbb] text-[4.5vw] xl:text-[1vw] flex flex-col justify-evenly w-full xl:w-fit xl:justify-center items-start gap-y-6 xl:col-start-5 mt-[2vh]">
-          <h4 className="text-[#ccc] text-[5vw] xl:text-[1.2vw] w-full text-center border-t border-[var(--white-transparent)] pt-4">
+          <h4 className="text-[#ccc] text-[5vw] xl:text-[1.2vw] w-full text-center border-t border-[var(--white-transparent)] xl:border-none pt-4">
             Redes Sociais
           </h4>
           <div className="grid grid-flow-col justify-evenly w-full">

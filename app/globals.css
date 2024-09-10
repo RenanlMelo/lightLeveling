@@ -103,6 +103,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background: center no-repeat fixed url("/fundo_gradiente.png");
 }
 
 body::before {
@@ -112,8 +113,8 @@ body::before {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background: center no-repeat url("/fundo_gradiente_mobile.png");
-  background-size: cover;
+  background: center no-repeat url("/fundo_gradiente.png");
+  background-size: contain;
   z-index: -1;
 }
 
