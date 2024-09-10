@@ -98,7 +98,7 @@ export const Services: React.FC<serviceProps> = ({ setSectionSize }) => {
               className={`dropDownDiv grid w-[75vw] xl:w-[calc(50%+50px)] h-full rounded-bl-3xl rounded-tr-3xl border border-[var(--text-light2)] relative cursor-pointer overflow-hidden`}
             >
               <div className="dropDownTitle flex justify-between items-center z-10 py-[6px]">
-                <h4 className="text-[5vw] xl:text-[calc(.6vw+7px)] font-medium text-[var(--text-light)] px-6 xl:px-[2vw] flex-grow">
+                <h4 className="text-[5vw] xl:text-[calc(.6vw+7px)] font-medium text-[var(--text-light)] px-6 xl:px-[2vw]">
                   {service.title}
                 </h4>
                 <svg
