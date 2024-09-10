@@ -55,7 +55,7 @@
   --main-purple: #4400e2cc;
   --secondary-red: #f13f41;
   --grey: #aaa;
-  --white-transparent: #ffffff50;
+  --white-transparent: rgba(255, 255, 255, 0.2);
 
   /* Introduction */
   --main-purpleVariant: #4c00ff;
@@ -69,8 +69,8 @@
   --icon-insta: #f271a2;
   --shadow-insta: #e1306cbf;
 
-  --icon-twitter: #fff;
-  --shadow-twitter: #ffffffcc;
+  --icon-linkedin: #0073b2;
+  --shadow-linkedin: #0073b2cc;
 
   --icon-whatsapp: #25d366;
   --shadow-whatsapp: #25d366;
@@ -82,26 +82,21 @@
   margin: 0;
 }
 
-::-webkit-scrollbar-button {
-  width: 35px;
-  margin: 0;
-  height: 35px;
-}
-
 ::-webkit-scrollbar-thumb {
   background: var(--main-purple);
-  border-radius: 50px;
 }
 
 ::-webkit-scrollbar-track {
   background: var(--black-05);
-  border: 0px none var(--white-f);
-  border-radius: 53px;
   margin: 0;
 }
 
+html,
 body {
-  background-color: rgb(250, 250, 255);
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: center no-repeat fixed url("/fundo_gradiente.png");
 }
 
 .menu-item {
@@ -179,22 +174,16 @@ select {
 
 a:hover:nth-child(1) .social_logo,
 a:hover:nth-child(1) h5 {
-  fill: var(--icon-insta);
-  color: var(--icon-insta);
-  filter: drop-shadow(0 0 5px var(--shadow-insta));
+  fill: var(--icon-linkedin);
+  color: var(--icon-linkedin);
+  filter: drop-shadow(0 0 5px var(--shadow-linkedin));
 }
 
 a:hover:nth-child(2) .social_logo,
 a:hover:nth-child(2) h5 {
-  fill: var(--icon-twitter);
-  filter: drop-shadow(0 0 5px var(--shadow-twitter));
-}
-
-a:hover:nth-child(3) .social_logo,
-a:hover:nth-child(3) h5 {
-  fill: var(--icon-whatsapp);
-  color: var(--icon-whatsapp);
-  filter: drop-shadow(0 0 5px var(--shadow-whatsapp));
+  fill: var(--icon-insta);
+  color: var(--icon-insta);
+  filter: drop-shadow(0 0 5px var(--shadow-insta));
 }
 
 .activeButton {
@@ -253,7 +242,6 @@ a:hover:nth-child(3) h5 {
   width: 0;
   height: 150%;
   background-color: var(--main-purple);
-  /* border-radius: 50%; */
   transition: width 0.35s ease-out, left 0.35s ease-out;
   transform-origin: center;
   z-index: -1;

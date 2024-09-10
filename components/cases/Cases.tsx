@@ -26,12 +26,12 @@ export const Cases = () => {
     <>
       <section
         id="cases"
-        className="w-full flex flex-col justify-center items-center my-12 relative"
+        className="w-full flex flex-col justify-center items-center xl:my-12 relative"
       >
-        <h1 className="text-[var(--text-dark)] text-[2.25vw] font-bold tracking-wide mb-[calc(5vh+10px)]">
+        <h1 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide mb-[calc(5vh+10px)]">
           Cases
         </h1>
-        <div className="w-full grid grid-cols-2 justify-evenly items-center px-[20vw] gap-x-[10vw]">
+        <div className="w-full flex flex-col gap-y-[5vh] xl:grid xl:grid-cols-2 justify-evenly items-center px-[5vw] xl:px-[20vw] gap-x-[10vw]">
           {casesData.map((project, index) => (
             <div
               onMouseEnter={() => setVisibleIndex(index)}
@@ -47,16 +47,16 @@ export const Cases = () => {
                 className="duration-300 aspect-video"
               />
               <div className="py-[4vh]">
-                <h2 className="text-[calc(1.15vw+5px)] text-[var(--text-dark)] ml-[2.5vw] pb-[1vh] rounded-3xl w-fit">
+                <h2 className="text-[6vw] xl:text-[calc(1.15vw+5px)] text-[var(--text-dark)] ml-[2.5vw] pb-[1vh] rounded-3xl w-fit">
                   {project.title}
                 </h2>
-                <p className="text-[calc(1vw+2px)] ml-[2vw] pb-[5vh] text-[var(--text-dark2)] w-fit text-start">
+                <p className="text-[5.5vw] xl:text-[calc(1vw+2px)] ml-[2vw] pb-[2.5vh] xl:pb-[5vh] text-[var(--text-dark2)] w-fit text-start">
                   {project.subtittle}
                 </p>
-                <p className="text-[calc(.8vw+2px)] text-[var(--text-dark2)] ml-[2vw]">
+                <p className="text-[5vw] xl:text-[calc(.8vw+2px)] text-[var(--text-dark2)] ml-[2vw]">
                   {project.description}
                 </p>
-                <span className="w-(calc(100%-2vw)) h-[calc(4vh+10px)] flex justify-end items-center mx-[2vw] py-[2vh] overflow-hidden relative">
+                <span className="hidden w-(calc(100%-2vw)) h-[calc(4vh+10px)] flex justify-end items-center mx-[2vw] py-[2vh] overflow-hidden relative">
                   <AnimatePresence>
                     {visibleIndex === index && (
                       <motion.a

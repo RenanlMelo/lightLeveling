@@ -38,28 +38,28 @@ export const About = () => {
   return (
     <section
       id="sobre"
-      className="w-full flex flex-col justify-center items-center py-24"
+      className="flex flex-col justify-center items-center py-12 xl:py-24"
     >
-      <h2 className="text-[var(--text-dark)] text-[2.25vw] tracking-wide mb-14">
+      <h2 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] tracking-wide xl:mb-14">
         Sobre
       </h2>
-      <div className="flex flex-col justify-center items-start px-[20vw] relative">
-        <div className="flex gap-x-8 p-8">
+      <div className="flex flex-col justify-center items-start px-[5vw] xl:px-[20vw] relative">
+        <div className="flex gap-x-8 p-4 xl:p-8 w-full">
           {data.map((item) => (
             <button
               key={item.id}
               onClick={() => handleClick(item.id)}
               className={`aboutButton ${
                 item.id === toggle.id
-                  ? "before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-[75%] before:h-[2px] before:-translate-x-1/2 before:bg-[var(--black-05)]"
-                  : ""
+                  ? "w-full xl:w-auto before:content-[''] before:absolute before:bottom-0 before:left-1/2 before:w-[75%] before:h-[2px] before:-translate-x-1/2 before:bg-[var(--black-05)]"
+                  : "w-full xl:w-auto"
               }`}
             >
               {item.name}
             </button>
           ))}
         </div>
-        <div className="flex flex-col justify-start items-start h-full bg-[var(--white-transparent)] p-16 rounded-2xl">
+        <div className="flex flex-col justify-start items-start h-full bg-[var(--white-transparent)] p-8 xl:p-16 rounded-2xl">
           <AnimatePresence mode="wait">
             <div key={toggle.id}>
               <motion.h3
@@ -67,7 +67,7 @@ export const About = () => {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 25, opacity: 0 }}
                 transition={{ duration: 0.1 }}
-                className="text-[var(--text-dark2)] text-[2vw] font-semibold p-6"
+                className="text-[var(--text-dark2)] text-[6vw] xl:text-[2vw] font-semibold p-6"
               >
                 {toggle.name}
               </motion.h3>
@@ -76,7 +76,7 @@ export const About = () => {
                 animate={{ x: 0, opacity: 1 }}
                 exit={{ x: 25, opacity: 0 }}
                 transition={{ duration: 0.1 }}
-                className="text-[calc(.6vw+8px)] leading-9 text-[var(--text-dark2)]"
+                className="text-[4.5vw] xl:text-[calc(.6vw+8px)] leading-9 text-[var(--text-dark2)]"
               >
                 {toggle.description}
               </motion.p>

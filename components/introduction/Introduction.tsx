@@ -35,7 +35,7 @@ export const Introduction: React.FC<introductionProps> = ({ sectionSize }) => {
     <>
       <section
         id="inicio"
-        className="h-[80vh] overflow-visible xl:h-auto w-[90vw] xl:w-full grid grid-cols-2 justify-center items-center relative mx-[5vw] xl:mx-0 px-0 xl:px-[10vw] py-[calc(10vh+20px)] bg-center bg-full bg-no-repeat"
+        className="h-[80vh] overflow-visible xl:h-auto w-[90vw] xl:w-full grid grid-cols-2 justify-center items-center relative mx-auto xl:mx-0 px-0 xl:px-[10vw] py-[calc(10vh+20px)] bg-center bg-full bg-no-repeat"
       >
         <div className="h-full flex justify-center items-center md:items-start flex-col row-span-2 col-span-2 md:col-span-1 md:row-span-1">
           <h1 className="text-[calc(5vw+7px)] xl:text-[calc(1.75vw+15px)] leading-[1] text-[var(--text-dark)] font-bold tracking-wider w-full md:text-start flex flex-col">
@@ -57,7 +57,7 @@ export const Introduction: React.FC<introductionProps> = ({ sectionSize }) => {
                 : 0
             }
             to={"servicos"}
-            className="services_nav_button gap-x-2 bottom-[10vh] absolute xl:static flex h-[calc(6vh+5px)] md:h-[calc(5.5vh+10px)] w-[50vw] md:w-fit items-center justify-center overflow-hidden rounded-full bg-gradient-to-tr from-[#f13f41] to-[var(--main-purpleVariant)] text-[var(--text-light)] shadow-[0_10px_20px_-12px_rgba(15,0,30,.5)] transition-all before:absolute before:h-0 before:w-0 before:rounded-full hover:before:bg-[var(--main-purpleVariant)] before:duration-500 before:ease-out hover:shadow-[var(--main-purpleVariant)] hover:before:h-56 hover:before:w-56 hover:before:scale-105"
+            className="services_nav_button absolute xl:relative bottom-[10vh] xl:bottom-0 gap-x-2 flex h-[calc(6vh+5px)] md:h-[calc(5.5vh+10px)] w-[50vw] md:w-fit items-center justify-center overflow-hidden rounded-full bg-gradient-to-tr from-[#f13f41] to-[var(--main-purpleVariant)] text-[var(--text-light)] shadow-[0_10px_20px_-12px_rgba(15,0,30,.5)] transition-all before:absolute before:h-0 before:w-0 before:rounded-full hover:before:bg-[var(--main-purpleVariant)] before:duration-500 before:ease-out hover:shadow-[var(--main-purpleVariant)] hover:before:h-56 hover:before:w-56 hover:before:scale-105"
           >
             <div className="grid grid-cols-4 items-center justify-center gap-x-[calc(.6vw+2px)] px-[calc(1vw+4px)]">
               <p className="text-[5.5vw] xl:text-[calc(.2vw+15px)] z-10 col-span-3 col-start-1 text-center">

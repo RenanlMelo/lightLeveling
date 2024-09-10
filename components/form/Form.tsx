@@ -150,16 +150,16 @@ export const Form = () => {
       <AnimatePresence>
         <motion.section
           id="form"
-          className="flex justify-center items-center flex-col w-[100%] h-fit py-24 relative"
+          className="flex justify-center items-center flex-col h-fit py-12 xl:py-24 relative"
         >
-          <div className="w-[75%] rounded-2xl py-10 backdrop-blur-lg relative">
+          <div className="w-full xl:w-[75%] rounded-2xl py-10 backdrop-blur-lg relative">
             <div id="loaded">
               <span>Seu pedido foi enviado com sucesso!</span>
             </div>
-            <div className="flex justify-between items-center gap-x-[10%] px-[5vw] ">
+            <div className="flex flex-col xl:flex-row justify-between items-center gap-x-[10%] px-[5vw] ">
               <h2
                 id="title"
-                className="text-[var(--text-dark2)] text-[calc(1.5vw+5px)] text-center pb-20 font-semibold"
+                className="text-[var(--text-dark2)] text-[7vw] xl:text-[calc(1.5vw+5px)] xl:text-center pb-20 font-semibold"
               >
                 Entre em contato conosco agora mesmo!
               </h2>
@@ -169,7 +169,7 @@ export const Form = () => {
                 data-form
                 onSubmit={handleSubmit}
                 action="https://formsubmit.co/ajax/renanlaramelo@gmail.com"
-                className="h-full w-full flex flex-col justify-start items-center gap-y-[calc(3vh+10px)] bg-[var(--white-transparent)] py-[5vh] rounded-xl shadow-2xl"
+                className="h-full w-full flex flex-col justify-start items-center gap-y-[calc(3vh-10px)] bg-[var(--white-transparent)] py-[5vh] rounded-xl shadow-2xl"
               >
                 <input
                   type="text"
@@ -256,7 +256,7 @@ export const Form = () => {
                   type="submit"
                   value="Enviar"
                   data-button
-                  className="w-[10vw] px-4 py-2 shadow-[0_4px_10px_rgba(94,0,218,.55)] bg-[var(--form-inputColor)] text-[var(--text-light)] rounded-lg text-lg hover:bg-[#303030] duration-300 hover:shadow-[0_4px_10px_rgba(250,250,250,.5)] hover:border-[#aaa] border border-transparent"
+                  className="w-[calc(100%-80px)] xl:w-[10vw] px-4 py-2 shadow-[0_4px_10px_rgba(94,0,218,.55)] bg-[var(--form-inputColor)] text-[var(--text-light)] rounded-lg text-lg hover:bg-[#303030] duration-300 hover:shadow-[0_4px_10px_rgba(250,250,250,.5)] hover:border-[#aaa] border border-transparent"
                 >
                   Enviar
                 </button>

@@ -72,7 +72,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
           <motion.header
             ref={headerRef}
             id="header"
-            className="fixed grid grid-cols-2 justify-center items-center max-w-[100vw] px-[2vw] xl:max-w-[93vw-20px] xl:px-[calc(3.5vw+10px)] w-full z-40 backdrop-blur-lg"
+            className="fixed grid grid-cols-2 justify-center items-center px-[2vw] xl:px-[calc(3.5vw+10px)] w-full z-40 backdrop-blur-lg"
             initial={{ backgroundColor: "transparent" }}
             animate={controls}
           >

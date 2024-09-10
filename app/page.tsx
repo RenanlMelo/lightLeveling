@@ -15,7 +15,6 @@ export default function Home() {
 
   return (
     <>
-      <Background />
       <Header sectionSize={sectionSize} />
       <Introduction sectionSize={sectionSize} />
       <Services setSectionSize={setSectionSize} />

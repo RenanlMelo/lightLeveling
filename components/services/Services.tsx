@@ -21,7 +21,7 @@ const servicesData = [
 
   // 3º Serviço
   {
-    title: "Loja Virtual",
+    title: "Site Institucional",
     description:
       "Leve seu negócio para o próximo nível com uma loja virtual robusta.",
     linkHref: "",
