@@ -99,6 +99,16 @@ body {
   background: center no-repeat fixed url("/fundo_gradiente.png");
 }
 
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: center no-repeat fixed url("/fundo_gradiente_mobile.png");
+  }
+}
+
 .menu-item {
   position: relative;
   transition: 0.1s;
@@ -149,8 +159,8 @@ body {
   .gradiente {
     background: linear-gradient(
       135deg,
-      rgb(153, 153, 200) 30%,
-      var(--main-purple)
+      rgb(13, 13, 20),
+      var(--main-purple) 70%
     );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
