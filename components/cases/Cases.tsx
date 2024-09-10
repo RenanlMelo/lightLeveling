@@ -28,7 +28,7 @@ export const Cases = () => {
         id="cases"
         className="w-full flex flex-col justify-center items-center xl:my-12 relative"
       >
-        <h1 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide mb-[calc(5vh+10px)]">
+        <h1 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide pb-12 xl:mb-[calc(5vh+10px)]">
           Cases
         </h1>
         <div className="w-full flex flex-col gap-y-[5vh] xl:grid xl:grid-cols-2 justify-evenly items-center px-[5vw] xl:px-[20vw] gap-x-[10vw]">
@@ -56,7 +56,7 @@ export const Cases = () => {
                 <p className="text-[5vw] xl:text-[calc(.8vw+2px)] text-[var(--text-dark2)] ml-[2vw]">
                   {project.description}
                 </p>
-                <span className="hidden w-(calc(100%-2vw)) h-[calc(4vh+10px)] flex justify-end items-center mx-[2vw] py-[2vh] overflow-hidden relative">
+                <span className="w-(calc(100%-2vw)) h-[calc(4vh+10px)] flex justify-end items-center mx-[2vw] py-[2vh] overflow-hidden relative">
                   <AnimatePresence>
                     {visibleIndex === index && (
                       <motion.a

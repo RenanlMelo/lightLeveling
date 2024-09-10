@@ -100,19 +100,26 @@
 
 html,
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  background: center no-repeat fixed url("/fundo_gradiente.png");
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: center no-repeat url("/fundo_gradiente_mobile.png");
+  background-size: cover;
+  z-index: -1;
 }
 
 @media screen and (max-width: 768px) {
-  html,
-  body {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background: center no-repeat fixed url("/fundo_gradiente_mobile.png");
+  body::before {
+    background: center no-repeat url("/fundo_gradiente_mobile.png");
   }
 }
 

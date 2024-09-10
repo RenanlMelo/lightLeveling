@@ -159,7 +159,7 @@ export const Form = () => {
             <div className="flex flex-col xl:flex-row justify-between items-center gap-x-[10%] px-[5vw] ">
               <h2
                 id="title"
-                className="text-[var(--text-dark2)] text-[7vw] xl:text-[calc(1.5vw+5px)] xl:text-center pb-20 font-semibold"
+                className="text-[var(--text-dark2)] text-[7vw] xl:text-[calc(1.5vw+5px)] xl:text-center pb-12 xl:pb-20 font-semibold"
               >
                 Entre em contato conosco agora mesmo!
               </h2>
