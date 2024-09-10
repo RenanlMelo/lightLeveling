@@ -176,19 +176,19 @@ export const Form = () => {
                   required
                   name="Nome"
                   placeholder="Nome"
-                  className="w-[calc(100%-80px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light2)] rounded-lg text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,1)] focus:bg-[var(--form-inputColor)] focus:text-[var(--text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
+                  className="w-[calc(100%-60px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light2)] rounded-lg text-[4vw] xl:text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,.5)] focus:bg-[var(--form-inputColor)] focus:text-[var(--text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
                 />
                 <input
                   type="email"
                   required
                   name="Email"
                   placeholder="E-mail"
-                  className="w-[calc(100%-80px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light2)] rounded-lg text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,1)] focus:bg-[var(--form-inputColor)] focus:text-[var(--text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
+                  className="w-[calc(100%-60px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light2)] rounded-lg text-[4vw] xl:text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,.5)] focus:bg-[var(--form-inputColor)] focus:text-[var(--text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
                 />
-                <div className="z-30 w-[calc(100%-80px)] bg-[var(--text-dark2)]  rounded-md text-lg relative">
+                <div className="z-30 w-[calc(100%-60px)] bg-[var(--text-dark2)]  rounded-md text-lg relative">
                   <h4
                     onClick={() => setOpenSelect(!openSelect)}
-                    className={`z-20 cursor-pointer px-4 py-2 rounded-md duration-300 text-[var(--form-selectText)] shadow-[0_4px_10px_rgba(0,0,0,1)] hover:bg-[var(--form-inputColor)] hover:shadow-[0_4px_10px_rgba(94,0,218,.55)] ${
+                    className={`z-20 cursor-pointer px-4 py-2 rounded-md duration-300 text-[var(--form-selectText)] shadow-[0_4px_10px_rgba(0,0,0,.5)] hover:bg-[var(--form-inputColor)] hover:shadow-[0_4px_10px_rgba(94,0,218,.55)] ${
                       openSelect
                         ? "bg-[url(/close_menu.png)]"
                         : "bg-[url(/open_menu.png)]"
@@ -242,21 +242,21 @@ export const Form = () => {
                       name="Serviço diferente"
                       required
                       placeholder="Serviço desejado"
-                      className="w-[calc(100%-80px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light)] rounded-lg text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,1)] focus:bg-[var(--form-inputColor)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
+                      className="w-[calc(100%-60px)] px-4 py-2 bg-[var(--text-dark2)] text-[var(--text-light)] rounded-lg text-[4vw] xl:text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,.5)] focus:bg-[var(--form-inputColor)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
                     />
                   )}
                 </AnimatePresence>
                 <textarea
                   name="Descrição"
                   placeholder="Descrição"
-                  className="w-[calc(100%-80px)] px-4 py-2 min-h-[150px] bg-[var(--text-dark2)] resize-none text-[var(--text-light2)] rounded-lg text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,1)] focus:bg-[var(--form-inputColor)] focus:text-[var(text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
+                  className="w-[calc(100%-60px)] px-4 py-2 min-h-[150px] bg-[var(--text-dark2)] resize-none text-[var(--text-light2)] rounded-lg text-[4vw] xl:text-lg outline-none duration-300 shadow-[0_4px_10px_rgba(0,0,0,.5)] focus:bg-[var(--form-inputColor)] focus:text-[var(text-light)] focus:shadow-[0_4px_10px_rgba(94,0,218,.55)]"
                 ></textarea>
                 <button
                   id="buttonSubmit"
                   type="submit"
                   value="Enviar"
                   data-button
-                  className="w-[calc(100%-80px)] xl:w-[10vw] px-4 py-2 shadow-[0_4px_10px_rgba(94,0,218,.55)] bg-[var(--form-inputColor)] text-[var(--text-light)] rounded-lg text-lg hover:bg-[#303030] duration-300 hover:shadow-[0_4px_10px_rgba(250,250,250,.5)] hover:border-[#aaa] border border-transparent"
+                  className="w-[calc(100%-60px)] xl:w-[10vw] px-4 py-2 shadow-[0_4px_10px_rgba(94,0,218,.55)] bg-[var(--form-inputColor)] text-[var(--text-light)] rounded-lg text-[4vw] xl:text-lg hover:bg-[#303030] duration-300 hover:shadow-[0_4px_10px_rgba(250,250,250,.5)] hover:border-[#aaa] border border-transparent"
                 >
                   Enviar
                 </button>

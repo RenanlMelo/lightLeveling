@@ -91,6 +91,13 @@
   margin: 0;
 }
 
+@layer utilities {
+  .backdrop-blur-lg {
+    -webkit-backdrop-filter: blur(16px); /* Safari */
+    backdrop-filter: blur(16px); /* Outros navegadores */
+  }
+}
+
 html,
 body {
   padding: 0;
