@@ -119,6 +119,14 @@ body::before {
 }
 
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: none;
+  }
+
   body::before {
     background: center no-repeat url("/fundo_gradiente_mobile.png");
   }
