@@ -21,7 +21,7 @@ export const Footer = () => {
           <div className="grid grid-flow-col justify-evenly w-full">
             <a
               href="https://www.linkedin.com/company/leveling-corporation/posts/?feedView=all"
-              className="flex justify-start items-center gap-x-[1vw] px-4 border-x border-[var(--white-transparent)]"
+              className="flex justify-start items-center gap-x-[1vw] px-4 border-r border-[var(--white-transparent)]"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export const Footer = () => {
             </a>
             <a
               href="https://www.instagram.com/leveling.corp/"
-              className="flex justify-start items-center gap-x-[1vw] px-4 border-r border-[var(--white-transparent)]"
+              className="flex justify-start items-center gap-x-[1vw] px-4"
             >
               <svg
                 fill="#ccc"
