@@ -139,6 +139,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
                     spy
                     duration={1000}
                     to={item.id}
+                    key={item.id}
                     className="text-[5vw]"
                     onClick={() => setIsOpen(false)}
                   >
