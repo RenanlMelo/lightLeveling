@@ -110,7 +110,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
               <path d="M 3 7 A 1.0001 1.0001 0 1 0 3 9 L 27 9 A 1.0001 1.0001 0 1 0 27 7 L 3 7 z M 3 14 A 1.0001 1.0001 0 1 0 3 16 L 27 16 A 1.0001 1.0001 0 1 0 27 14 L 3 14 z M 3 21 A 1.0001 1.0001 0 1 0 3 23 L 27 23 A 1.0001 1.0001 0 1 0 27 21 L 3 21 z"></path>
             </svg>
             {isOpen && (
-              <nav className="absolute bg-[#eee] w-4/5 h-[100vh] right-0 top-0 flex flex-col p-10">
+              <nav className="absolute bg-[#eee] w-4/5 h-[100vh] right-0 top-0 flex flex-col p-10 gap-y-4">
                 <svg
                   onClick={handleToggle}
                   width="30"
@@ -140,7 +140,7 @@ export const Header: React.FC<headerProps> = ({ sectionSize }) => {
                     duration={1000}
                     to={item.id}
                     key={item.id}
-                    className="text-[5vw]"
+                    className="text-[5vw] border-b border-black/50"
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
