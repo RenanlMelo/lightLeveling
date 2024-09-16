@@ -69,7 +69,7 @@ export const Services: React.FC<serviceProps> = ({ setSectionSize }) => {
       <div className="flex flex-col xl:grid grid-cols-2 gap-y-[6vh] justify-center items-center w-fit mx-auto">
         <div className="col-start-1 row-start-1 row-span-full flex justify-evenly flex-col">
           <div>
-            <h2 className="text-[var(--text-light)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide xl:ml-10">
+            <h2 className="text-[var(--text-light)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide mb-2 xl:ml-10">
               Nossas soluções
             </h2>
             <h3 className="text-[var(--text-light2)] text-[4.5vw] xl:text-[1.25vw] font-normal tracking-wide xl:ml-14 xl:mb-4 -translate-y-4">
