@@ -4,18 +4,28 @@ import Image from "next/image";
 
 const casesData = [
   {
-    url: "autosalesbrasil",
+    name: "autosalesbrasil",
     image: "/autosalesbrasil_image.png",
     title: "Auto Sales Brasil",
     subtittle: "E-commerce institucional",
     description: "Website destinado a revenda de veículos",
+    url: "https://autosalesbrasil.vercel.app/",
   },
   {
-    url: "unilockpisos",
+    name: "unilockpisos",
     image: "/unilockpisos_image.png",
     title: "Unilock Pisos",
-    subtittle: "Em construção",
+    subtittle: "Site institucional",
     description: "...",
+    url: "https://unilockpisos.com.br",
+  },
+  {
+    name: "pitows",
+    image: "/emconstrucao.png",
+    title: "Pitows Alfaiataria",
+    subtittle: "E-commerce institucional",
+    description: "...",
+    url: "",
   },
 ];
 
@@ -28,10 +38,10 @@ export const Cases = () => {
         id="cases"
         className="w-full flex flex-col justify-center items-center xl:my-12 relative"
       >
-        <h1 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide pb-12 xl:mb-[calc(5vh+10px)]">
+        <h1 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] font-bold tracking-wide pt-12 xl:mb-[calc(5vh+10px)]">
           Cases
         </h1>
-        <div className="w-full flex flex-col gap-y-[5vh] xl:grid xl:grid-cols-2 justify-evenly items-center px-[5vw] xl:px-[20vw] gap-x-[10vw]">
+        <div className="w-full flex flex-col gap-y-[5vh] xl:grid xl:grid-cols-3 justify-evenly items-center px-[5vw] xl:px-[10vw] gap-x-[5vw]">
           {casesData.map((project, index) => (
             <div
               onMouseEnter={() => setVisibleIndex(index)}
@@ -39,14 +49,16 @@ export const Cases = () => {
               className="flex flex-col justify-evenly font-sans bg-[var(--white-transparent)] relative rounded-lg overflow-hidden"
               key={index}
             >
-              <Image
-                src={project.image}
-                alt="Imagem de fundo"
-                width={1600}
-                height={900}
-                className="duration-300 aspect-video"
-              />
-              <div className="py-[4vh]">
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                <Image
+                  src={project.image}
+                  alt="Imagem de fundo"
+                  width={1600}
+                  height={900}
+                  className="duration-300 aspect-video"
+                />
+              </a>
+              <div className="py-[2vh]">
                 <h2 className="text-[6vw] xl:text-[calc(1.15vw+5px)] text-[var(--text-dark)] ml-[2.5vw] pb-[1vh] rounded-3xl w-fit">
                   {project.title}
                 </h2>

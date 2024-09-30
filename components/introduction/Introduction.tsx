@@ -91,7 +91,7 @@ export const Introduction: React.FC<introductionProps> = ({ sectionSize }) => {
           width={1000}
           height={1000}
           alt="Logo com efeito"
-          className="w-[100%] blur-sm md:blur-none -z-10 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 xl:translate-x-0 xl:translate-y-0 xl:right-32 md:top-32 col-start-1 lg:col-start-2 absolute md:static bg-center"
+          className="w-[100%] select-none blur-sm md:blur-none -z-10 left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2 xl:translate-x-0 xl:translate-y-0 xl:right-32 md:top-32 col-start-1 lg:col-start-2 absolute md:static bg-center"
         />
       </section>
     </>

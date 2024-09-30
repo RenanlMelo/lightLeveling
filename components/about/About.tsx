@@ -38,9 +38,9 @@ export const About = () => {
   return (
     <section
       id="sobre"
-      className="flex flex-col justify-center items-center py-12 xl:py-24"
+      className="flex flex-col justify-center items-center py-12"
     >
-      <h2 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] tracking-wide xl:mb-14">
+      <h2 className="text-[var(--text-dark)] text-[7vw] xl:text-[2.25vw] tracking-wide xl:mt-12">
         Sobre
       </h2>
       <div className="flex flex-col justify-center items-start px-[5vw] xl:px-[20vw] relative">

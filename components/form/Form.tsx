@@ -150,7 +150,7 @@ export const Form = () => {
       <AnimatePresence>
         <motion.section
           id="form"
-          className="flex justify-center items-center flex-col h-fit py-12 xl:py-24 relative"
+          className="flex justify-center items-center flex-col h-fit py-12 relative"
         >
           <div className="w-full xl:w-[75%] rounded-2xl py-10 backdrop-blur-lg relative">
             <div id="loaded">
@@ -159,7 +159,7 @@ export const Form = () => {
             <div className="flex flex-col xl:flex-row justify-between items-center gap-x-[10%] px-[5vw] ">
               <h2
                 id="title"
-                className="text-[var(--text-dark2)] text-[7vw] xl:text-[calc(1.5vw+5px)] xl:text-center pb-12 xl:pb-20 font-semibold"
+                className="text-[var(--text-dark2)] text-[7vw] xl:text-[calc(1.5vw+5px)] xl:text-center pb-12 xl:pb-0 font-semibold"
               >
                 Entre em contato conosco agora mesmo!
               </h2>
