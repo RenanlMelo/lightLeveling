@@ -16,7 +16,8 @@ const casesData = [
     image: "/unilockpisos_image.png",
     title: "Unilock Pisos",
     subtittle: "Site institucional",
-    description: "...",
+    description:
+      "Website institucional destinado a instalação de pisos intertravados",
     url: "https://unilockpisos.com.br",
   },
   {
@@ -65,7 +66,7 @@ export const Cases = () => {
                 <p className="text-[5.5vw] xl:text-[calc(1vw+2px)] ml-[2vw] pb-[2.5vh] xl:pb-[5vh] text-[var(--text-dark2)] w-fit text-start">
                   {project.subtittle}
                 </p>
-                <p className="text-[5vw] xl:text-[calc(.8vw+2px)] text-[var(--text-dark2)] ml-[2vw]">
+                <p className="text-[5vw] xl:text-[calc(.8vw+2px)] text-[var(--text-dark2)] mx-[2vw]">
                   {project.description}
                 </p>
                 <span className="w-(calc(100%-2vw)) h-[calc(4vh+10px)] flex justify-end items-center mx-[2vw] py-[2vh] overflow-hidden relative">
